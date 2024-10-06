@@ -25,10 +25,13 @@ const FormInput = ({ label, type, value, onChange, error, helperText, name }) =>
 				required
 				size='small'
 				sx={{
-					fontWeight: 400,
-					fontSize: 14,
 					borderRadius: '5px',
 					outline: 'none',
+					'& .MuiInputBase-input': {
+						fontSize: '14px',
+						fontWeight: 400,
+						color: '#000000',
+					},
 					'& .MuiOutlinedInput-root': {
 						backgroundColor: '#ffffff',
 						'& fieldset': {
@@ -54,7 +57,7 @@ FormInput.propTypes = {
 	label: PropTypes.string.isRequired,
 	type: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
-	value: PropTypes.string.isRequired,
+	value: PropTypes.string,
 	onChange: PropTypes.func.isRequired,
 	error: PropTypes.bool,
 	helperText: PropTypes.string,
