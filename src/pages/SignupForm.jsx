@@ -63,7 +63,7 @@ const SignupForm = () => {
 					variant='subtitle1'
 					align='center'
 					fontWeight={400}
-					sx={{ fontFamily: 'Roboto Flex, sans-serif', marginBottom: '2rem' }}
+					marginBottom={4}
 				>
 					We set you up quickly.
 				</Typography>
@@ -120,8 +120,8 @@ const SignupForm = () => {
 					render={({ field }) => (
 						<FormInput
 							label='Confirm Password'
-							type='password'
 							{...field}
+							type='password'
 							error={!!errors.confirmPassword}
 							helperText={errors.confirmPassword?.message}
 						/>
@@ -140,7 +140,7 @@ const SignupForm = () => {
 					fontWeight={400}
 					fontSize={12}
 					color='#717171'
-					sx={{ fontFamily: 'Roboto Flex, sans-serif', marginTop: '2rem' }}
+					marginTop={4}
 				>
 					Already have an account?{' '}
 					<a
