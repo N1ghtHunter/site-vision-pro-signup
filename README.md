@@ -24,10 +24,10 @@ This project is a simple signup form built using React and Vite. It includes for
    ```
 3. Install the dependencies:
    ```sh
-   npm install
+   pnpm install
    ```
 4. Start the development server:
    ```sh
-   npm run dev
+   pnpm run dev
    ```
 5. Open the browser and visit `http://localhost:5173/`.
